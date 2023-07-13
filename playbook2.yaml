@@ -29,7 +29,7 @@
         state: reloaded
     - name: creating the directory
       copy:
-        src: /tmp/index.html
+        src: /tmp/calculator
         dest: /var/www/html/
     - name: restarting the apache services
       service:
