@@ -1,5 +1,5 @@
 ---
-- name: configuring the apache server
+- name: configuring and installing the apache server
   hosts: myserver
   become: yes
   tasks:
