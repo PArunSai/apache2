@@ -1,6 +1,6 @@
 ---
 - name: configuring the apache server
-  hosts: localhost
+  hosts: myserver
   become: yes
   tasks:
     - name: Install prerequisites
