@@ -14,10 +14,12 @@
       service:
         name: apache2
         state: started
-    - name: creating the directory
+    - name: Copy file to remote server
       copy:
-        src: /tmp/calculator
-        dest: /var/www/html/
+       src: /tmp/calculator
+       dest: /tmp/calculator
+       remote_src: true
+
     - name: restarting the apache services
       service:
         name: apache2
