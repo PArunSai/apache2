@@ -18,8 +18,7 @@
       copy:
        src: /tmp/calculator
        dest: /var/www/html/
-       remote_src: true
-
+       
     - name: restarting the apache services
       service:
         name: apache2
