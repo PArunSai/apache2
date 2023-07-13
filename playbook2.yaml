@@ -17,7 +17,7 @@
     - name: Copy file to remote server
       copy:
        src: /tmp/calculator
-       dest: /tmp/calculator
+       dest: /var/www/html/
        remote_src: true
 
     - name: restarting the apache services
